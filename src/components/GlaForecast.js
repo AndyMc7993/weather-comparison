@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Conditions from "./Conditions";
+import ConditionsGla from "./ConditionsGla";
 
 const GlaForecast = () => {
 
@@ -24,7 +24,7 @@ const GlaForecast = () => {
         <div className="gla-forecast">
            <h2>Find My Current Weather Conditions</h2>
            <button onClick={getForecast}>Get My Forecast</button>
-           <Conditions
+           <ConditionsGla
                responseObj={responseObj}
                />
        </div>

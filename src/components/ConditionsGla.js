@@ -1,6 +1,6 @@
 import React from "react";
 
-const Conditions = (props) => {
+const ConditionsGla = (props) => {
     return(
         <div>
             {props.error && <small id="Small">Please enter a valid location.</small>}
@@ -8,7 +8,6 @@ const Conditions = (props) => {
 
             {props.responseObj.cod === 200 ?
                <div>
-                   {document.getElementById("Small").innerHTML=""}
                    <p><strong>{props.responseObj.name}</strong></p>
                    <p>It is currently {Math.round(props.responseObj.main.temp)} degrees out with {props.responseObj.weather[0].description}.</p>
                </div>
@@ -20,4 +19,4 @@ const Conditions = (props) => {
     )
 }
 
-export default Conditions
+export default ConditionsGla

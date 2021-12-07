@@ -1,11 +1,17 @@
 body{
   text-align: center;
   margin: 0.5em;
+  background-image: url('./images/FullBG.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 #Small {
   color: red;
 }
+
 
 .Loader {
   border: 16px solid #f3f3f3;
@@ -21,6 +27,31 @@ body{
   100% { transform: rotate(360deg); }
 }
 
-.footer{
-  padding-top: 3em;
+.foot-img{
+  z-index: 100;
+}
+
+.foot-color{
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 10%;
+}
+
+/* 500px + */
+
+
+@media screen and (min-width:500px) {
+  .foot-img {
+    /* position: absolute;
+    bottom: 2em;
+    justify-content: center;
+    padding: 0;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 2em; */
+  }
 }

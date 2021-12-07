@@ -4,12 +4,13 @@ import Nav from '../src/components/Nav'
 import GlaForecast from './components/GlaForecast';
 import Footer from '../src/components/Footer'
 import LocForecast from './components/LocForecast';
-
+import './App.css'
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="App"
+    >
       <Nav />
       <GlaForecast />
       <LocForecast />
