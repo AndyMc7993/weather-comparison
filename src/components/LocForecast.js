@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Conditions from "./Conditions";
+import '../App.css'
 
 const LocForecast = () => {
 
@@ -41,25 +42,17 @@ const LocForecast = () => {
 
     return(
         <div className="loc-forecast">
-           <h2>Find Your Current Weather Conditions</h2>
+           <h2>2. Check the weather where you are</h2>
            <form onSubmit={getForecast}>
                 <input
+                    className="text-input"
                     type="text"
-                    placeholder="Enter City"
+                    placeholder="Enter town / city"
                     maxLength="50"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     />
-                <label>
-                    <input
-                        type="radio"
-                        name="units"
-                        checked={unit === "imperial"}
-                        value="imperial"
-                        onChange={(e) => setUnit(e.target.value)}
-                        />
-                    Fahrenheit
-                </label>
+                <br />
                 <label>
                     <input
                         type="radio"
@@ -70,7 +63,18 @@ const LocForecast = () => {
                         />
                     Celcius
                 </label>
-                <button type="submit">Get Your Forecast</button>
+                <label>
+                    <input
+                        type="radio"
+                        name="units"
+                        checked={unit === "imperial"}
+                        value="imperial"
+                        onChange={(e) => setUnit(e.target.value)}
+                        />
+                    Fahrenheit
+                </label>
+                <br />
+                <button type="submit">Reveal</button>
             </form>
            <Conditions
                responseObj={responseObj}

@@ -9,11 +9,12 @@ import './App.css'
 function App() {
 
   return (
-    <div className="App"
-    >
+    <div className="App">
       <Nav />
-      <GlaForecast />
-      <LocForecast />
+      <div className="forecasts">
+        <GlaForecast />
+        <LocForecast />
+      </div>
       <Footer />
     </div>
   );
