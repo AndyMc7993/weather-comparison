@@ -187,6 +187,10 @@ body *{
   html{
     font-size: 115%;
   }
+  
+  .nav h1{
+    margin-top: 1em;
+  }
 
   .forecasts {
     display: flex;
@@ -208,6 +212,7 @@ body *{
   }
 
   .creds{
+    font-size: 90%;
     position: absolute;
     bottom: 1.5em;
     text-align: center;
