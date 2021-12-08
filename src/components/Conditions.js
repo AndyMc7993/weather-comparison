@@ -1,4 +1,5 @@
 import React from "react";
+import Convert from "./Convert";
 
 const Conditions = (props) => {
     return(
@@ -10,7 +11,7 @@ const Conditions = (props) => {
                <div className="loc-response">
                    <p className="loc-title"><strong>{props.responseObj.name}</strong></p>
                    <img className="weather-icons" alt="weather icon" src={`http://openweathermap.org/img/w/${props.responseObj.weather[0].icon}.png`} />
-                   <p className="loc-desc">It is currently {Math.round(props.responseObj.main.temp)} degrees out with {props.responseObj.weather[0].description}.</p>
+                   <p className="loc-desc">It is currently {Math.round(props.responseObj.main.temp)} / {Convert(Math.round(props.responseObj.main.temp))}F out with {props.responseObj.weather[0].description}.</p>
                </div>
            : null
            }
