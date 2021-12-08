@@ -10,7 +10,7 @@
 
 body{
   text-align: center;
-  margin:0.5em;
+  margin:1em;
   background-image: url('./images/Group8.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -52,34 +52,33 @@ body *{
   color: white;
   font-size: 5rem;
   font-weight: 300;
-  padding-top: 0.75em;
 }
 
 .nav h4{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   color: white;
-  margin-top: 0.4em;
+  margin-top: 1em;
 }
 
 /*GLA Forecast*/
 
 .gla-forecast h2{
   font-size: 1rem;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
   color: white;
   margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 .gla-forecast button{
   background-color: #DE4E4D;
   color: white;
   border: none;
-  border-radius: 10%;
-  padding: 0.5em 1em;
-  margin-top: 1em;
+  border-radius: 10px;
+  padding: 0.75em 1em;
 }
 
 .gla-title, .gla-desc{
@@ -87,43 +86,48 @@ body *{
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   color: white;
+  border: none;
+  padding: none;
 }
 
 .weather-icons{
-  position: relative;
-  top: 1.2em;
   margin:none;
   padding:none;
+}
+
+.gla-forecast hr, .loc-forecast hr{
+  border: 1px dotted rgba(255,255,255, 0.25);
+}
+
+.gla-title, .loc-title{
+  letter-spacing: 0.3em;
 }
 
 /*LOC Forecast*/
 
 .loc-forecast h2{
   font-size: 1rem;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
   color: white;
   margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 .loc-forecast button{
   background-color: #DE4E4D;
   color: white;
   border: none;
-  border-radius: 10%;
-  padding: 0.5em 1em;
-  margin-top: 1em;
+  border-radius: 10px;
+  padding: 0.75em 1em;
 }
 
 .text-input{
   border-radius: 10px;
   margin-bottom: 0.5em;
   padding: 0.5em;
-}
-
-label{
-  color: white;
-  font-family: 'Nunito', sans-serif;
+  width: 50%;
+  margin-right: 1em;
 }
 
 .loc-title, .loc-desc{
@@ -131,6 +135,8 @@ label{
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   color: white;
+  border: none;
+  padding: none;
 }
 
 /*Footer*/
@@ -154,18 +160,15 @@ label{
 
 }
 
-.joke-part{
-    background-image: url(./images/comment.png);
-    background-repeat: no-repeat;
-    background-size: 32vh;
-    background-position: top;
-}
-
 .pf-link{
   color:#0D3B66;
   text-decoration: underline #0D3B66;
 }
 
+/* .joke-part{
+  display: flex;
+  align-items: center;
+} */
 
 /* 700px + */
 

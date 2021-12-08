@@ -8,7 +8,8 @@ const ConditionsGla = (props) => {
             {props.responseObj.cod === 200 ?
                <div>
                    <p className="gla-title"><strong>{props.responseObj.name}</strong></p>
-                   <p className="gla-desc">It is currently {Math.round(props.responseObj.main.temp)} degrees out with {props.responseObj.weather[0].description} <img className="weather-icons" alt="weather icon" src={`http://openweathermap.org/img/w/${props.responseObj.weather[0].icon}.png`} /></p>
+                   <img className="weather-icons" alt="weather icon" src={`http://openweathermap.org/img/w/${props.responseObj.weather[0].icon}.png`} />
+                   <p className="gla-desc">It is currently {Math.round(props.responseObj.main.temp)}C out with {props.responseObj.weather[0].description}. </p>
                </div>
            : null
            }

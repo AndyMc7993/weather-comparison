@@ -6,7 +6,6 @@ const LocForecast = () => {
 
     let [responseObj, setResponseObj] = useState({});
     let [city, setCity] = useState('');
-    let [unit, setUnit] = useState('metric');
     let [error, setError] = useState(false);
     let [loading, setLoading] = useState(false);
 
@@ -19,7 +18,7 @@ const LocForecast = () => {
             return setError(true);
         }
 
-        fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
+        fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=metric&q=${uriEncodedCity}`, {
         "method": "GET",
         "headers": {
 		"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
@@ -52,28 +51,6 @@ const LocForecast = () => {
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     />
-                <br />
-                <label>
-                    <input
-                        type="radio"
-                        name="units"
-                        checked={unit === "metric"}
-                        value="metric"
-                        onChange={(e) => setUnit(e.target.value)}
-                        />
-                    Celcius
-                </label>
-                <label>
-                    <input
-                        type="radio"
-                        name="units"
-                        checked={unit === "imperial"}
-                        value="imperial"
-                        onChange={(e) => setUnit(e.target.value)}
-                        />
-                    Fahrenheit
-                </label>
-                <br />
                 <button type="submit">Reveal</button>
             </form>
            <Conditions
@@ -81,6 +58,7 @@ const LocForecast = () => {
                error={error}
                loading={loading}
                />
+            <hr />
         </div>
     )
 }
