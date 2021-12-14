@@ -8,13 +8,7 @@ const GlaForecast = (e) => {
 
     function getForecast() {
 
-        fetch(`https://community-open-weather-map.p.rapidapi.com/weather?q=Glasgow&units=metric`, {
-        "method": "GET",
-        "headers": {
-		"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-           "x-rapidapi-key": process.env.REACT_APP_API_KEY
-	    }
-        })
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Glasgow&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
         .then(response => response.json())
         .then(response => {
            setResponseObj(response)
