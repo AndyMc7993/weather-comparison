@@ -1,6 +1,6 @@
 {
   "name": "weather-comparison",
-  "homepage": "http://andymc7993.github.io/weather-comparison"
+  "homepage": "http://andymc7993.github.io/weather-comparison",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
