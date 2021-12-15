@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/weather-comparison/static/css/main.b0303beb.chunk.css",
+    "main.js": "/weather-comparison/static/js/main.cc426b96.chunk.js",
+    "main.js.map": "/weather-comparison/static/js/main.cc426b96.chunk.js.map",
+    "runtime-main.js": "/weather-comparison/static/js/runtime-main.8e7c1c27.js",
+    "runtime-main.js.map": "/weather-comparison/static/js/runtime-main.8e7c1c27.js.map",
+    "static/js/2.39039693.chunk.js": "/weather-comparison/static/js/2.39039693.chunk.js",
+    "static/js/2.39039693.chunk.js.map": "/weather-comparison/static/js/2.39039693.chunk.js.map",
+    "index.html": "/weather-comparison/index.html",
+    "static/css/main.b0303beb.chunk.css.map": "/weather-comparison/static/css/main.b0303beb.chunk.css.map",
+    "static/js/2.39039693.chunk.js.LICENSE.txt": "/weather-comparison/static/js/2.39039693.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/weather-comparison/static/media/TulpenOne-Regular.fc5158b0.ttf",
+    "static/media/Gsq.544681a1.png": "/weather-comparison/static/media/Gsq.544681a1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e7c1c27.js",
+    "static/js/2.39039693.chunk.js",
+    "static/css/main.b0303beb.chunk.css",
+    "static/js/main.cc426b96.chunk.js"
+  ]
+}
