@@ -10,7 +10,7 @@ function Footer(){
                 <img src={img} className="foot-img"></img>
             </div>
                 <p className="creds">Created by Andy McInnes, in Glasgow 🌧️ 2021<br />
-                View <a className="pf-link">my portfolio here</a></p>
+                View <a href="https://andymc7993.github.io/" className="pf-link">my portfolio here</a></p>
         </div>
         
     )
